@@ -84,4 +84,4 @@ Look for the `update_frequency` parameter or the optimizer step conditions in th
 2. Ho, J., et al. (2020). *Denoising Diffusion Probabilistic Models*. NeurIPS 2020.
 3. Wang, Z., et al. (2025). *Avoid Catastrophic Forgetting with Rank-1 Fisher from Diffusion Models*. Georgia Institute of Technology.
 
-*This project was developed as part of academic coursework and research at Ben-Gurion University.*
+*This project was developed as part of "Generative Models" academic coursework and research at Ben-Gurion University.*
