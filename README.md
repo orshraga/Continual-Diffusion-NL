@@ -48,7 +48,6 @@ Our empirical results show that a frequency schedule of `[1, 4, 16]` (Shallow, M
 ```bash
 git clone https://github.com/orshraga/Continual-Diffusion-NL.git
 cd Continual-Diffusion-NL
-pip install -r requirements.txt
 ```
 
 **2. Train the baseline model:**
