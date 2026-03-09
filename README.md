@@ -4,7 +4,7 @@
 * Amit Sason
 * Eldar Mamedov
 * Or Shraga
-*E-mails: {amitsaso,eldarmam,shragao}@post.bgu.ac.il 
+* E-mails: {amitsaso,eldarmam,shragao}@post.bgu.ac.il 
 
 
 ## 📝 About The Project
