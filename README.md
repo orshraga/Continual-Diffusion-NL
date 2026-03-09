@@ -40,22 +40,3 @@ Behrouz, A., et al. (2025). Nested Learning: The Illusion of Deep Learning Archi
 Ho, J., et al. (2020). Denoising Diffusion Probabilistic Models. NeurIPS 2020.
 
 Wang, Z., et al. (2025). Avoid Catastrophic Forgetting with Rank-1 Fisher from Diffusion Models. Georgia Institute of Technology.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 🚀 How to Run
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-   cd your-repo-name
