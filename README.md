@@ -77,10 +77,6 @@ For example, to set the optimal frequency `[1, 4, 16]`:
 
 Look for the `update_frequency` parameter or the optimizer step conditions in the training loop to experiment with other schedules like `[1, 2, 8]`, `[1, 4, 8]`, or `[2, 16, 32]`.
 
-<br>
-
-**📄 Full Project Report**
-For a deep dive into our methodology, architectural choices, and extended results, please read our [Full Project Report](Final_Report_Nested_Learning.pdf).
 
 <br>
 
