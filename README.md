@@ -29,14 +29,37 @@ Our empirical results show that a frequency schedule of `[1, 4, 16]` (Shallow, M
    ```bash
    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
    cd your-repo-name
-Train the baseline model:Bashpython train_A_than_B_base.py
-Train the model using the frequency-based approach:Bashpython train_A_than_B_freq_1_4_16.py
-Evaluate the models:Use the inference_evaluatin.ipynb notebook to generate images and calculate FID and Accuracy scores.⚙️ How to Change Layer Update FrequenciesThe core of this project lies in altering the update frequencies of different parts of the U-Net architecture.The architecture is partitioned into three logical depth groups: Shallow, Middle, and Deep.
-You can change the update schedule S = [f_shallow, f_middle, f_deep] in the training scripts (e.g., train_A_than_B_freq_1_4_16.py).For example, to set the optimal frequency [1, 4, 16]:Shallow level: Updated at every optimization step (k=1).Middle level: Updated every 4 batches (k=4).Deep level: Updated every 16 batches (k=16).Look for the update_frequency parameter or the optimizer step conditions in the training loop to experiment with other schedules like [1, 2, 8], [1, 4, 8], or [2, 16, 32].
+   
+**Train the baseline model:**
+```bash
+python train_A_than_B_base.py
+```
 
-📚 Relevant Papers
-Behrouz, A., et al. (2025). Nested Learning: The Illusion of Deep Learning Architectures. Google Research.
+**Train the model using the frequency-based approach:**
+```bash
+python train_A_than_B_freq_1_4_16.py
+```
 
-Ho, J., et al. (2020). Denoising Diffusion Probabilistic Models. NeurIPS 2020.
+**Evaluate the models:**
+Use the `inference_evaluatin.ipynb` notebook to generate images and calculate FID and Accuracy scores.
 
-Wang, Z., et al. (2025). Avoid Catastrophic Forgetting with Rank-1 Fisher from Diffusion Models. Georgia Institute of Technology.
+<br>
+
+**⚙️ How to Change Layer Update Frequencies**
+The core of this project lies in altering the update frequencies of different parts of the U-Net architecture.
+
+The architecture is partitioned into three logical depth groups: `Shallow`, `Middle`, and `Deep`. You can change the update schedule `S = [f_shallow, f_middle, f_deep]` in the training scripts (e.g., `train_A_than_B_freq_1_4_16.py`).
+
+For example, to set the optimal frequency `[1, 4, 16]`:
+* **Shallow level:** Updated at every optimization step (`k=1`).
+* **Middle level:** Updated every 4 batches (`k=4`).
+* **Deep level:** Updated every 16 batches (`k=16`).
+
+Look for the `update_frequency` parameter or the optimizer step conditions in the training loop to experiment with other schedules like `[1, 2, 8]`, `[1, 4, 8]`, or `[2, 16, 32]`.
+
+<br>
+
+**📚 Relevant Papers**
+1. Behrouz, A., et al. (2025). *Nested Learning: The Illusion of Deep Learning Architectures*. Google Research.
+2. Ho, J., et al. (2020). *Denoising Diffusion Probabilistic Models*. NeurIPS 2020.
+3. Wang, Z., et al. (2025). *Avoid Catastrophic Forgetting with Rank-1 Fisher from Diffusion Models*. Georgia Institute of Technology.
