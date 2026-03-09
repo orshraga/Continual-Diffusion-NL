@@ -6,25 +6,23 @@
 * Or Shraga
 * E-mails: {amitsaso,eldarmam,shragao}@post.bgu.ac.il 
 
-
 ## 📝 About The Project
-[cite_start]This project addresses the challenge of "Catastrophic Forgetting" in generative diffusion models when trained on sequential tasks[cite: 2163]. [cite_start]Our objective is to demonstrate a frequency-based continual learning strategy in Denoising Diffusion Probabilistic Models (DDPMs) that outperforms existing regularization methods (like EWC) in retaining prior knowledge while successfully acquiring new tasks[cite: 2164].
+This project addresses the challenge of "Catastrophic Forgetting" in generative diffusion models when trained on sequential tasks. Our objective is to demonstrate a frequency-based continual learning strategy in Denoising Diffusion Probabilistic Models (DDPMs) that outperforms existing regularization methods (like EWC) in retaining prior knowledge while successfully acquiring new tasks.
 
-[cite_start]Taking inspiration from the human brain's multi-time-scale update mechanisms (Nested Learning - NL), we propose a training strategy where different layers of a U-Net architecture are updated at varying frequencies[cite: 2167]. [cite_start]Specifically, shallow layers are updated frequently to capture fine-grained visual details, while deeper layers integrate information over longer, slower cycles to preserve abstract semantic representations[cite: 2168, 2231, 2232].
+Taking inspiration from the human brain's multi-time-scale update mechanisms (Nested Learning - NL), we propose a training strategy where different layers of a U-Net architecture are updated at varying frequencies. Specifically, shallow layers are updated frequently to capture fine-grained visual details, while deeper layers integrate information over longer, slower cycles to preserve abstract semantic representations.
 
-[cite_start]We evaluated our approach using a class-conditional DDPM on a partitioned MNIST dataset[cite: 2169]:
-* [cite_start]**Task A:** Digits 0-5 [cite: 2213]
-* [cite_start]**Task B:** Digits 6-9 [cite: 2214]
+We evaluated our approach using a class-conditional DDPM on a partitioned MNIST dataset:
+* **Task A:** Digits 0-5
+* **Task B:** Digits 6-9
 
-[cite_start]Our empirical results show that a frequency schedule of `[1, 4, 16]` (Shallow, Middle, Deep) provided the optimal performance, significantly reducing forgetting and maintaining higher image quality for previous tasks[cite: 2287, 2172].
+Our empirical results show that a frequency schedule of `[1, 4, 16]` (Shallow, Middle, Deep) provided the optimal performance, significantly reducing forgetting and maintaining higher image quality for previous tasks.
 
 ## 📂 Repository Structure
-* [cite_start]`train_A_than_B_base.py` - Script for training the baseline sequential diffusion model.
-* [cite_start]`train_A_than_B_freq_1_4_16.py` - Script for training the model using our proposed Nested-Learning-inspired frequency updates (1_4_16).
-* [cite_start]`eval.py` / `inference_evaluatin.ipynb` - Scripts and notebooks for evaluating FID scores and accuracy[cite: 2531, 2549].
-* [cite_start]`predict.py` - Inference script to generate new samples.
-* [cite_start]`run_diffusion_modules.ipynb` - Interactive notebook for running the diffusion modules[cite: 2831].
-
+* `train_A_than_B_base.py` - Script for training the baseline sequential diffusion model.
+* `train_A_than_B_freq_1_4_16.py` - Script for training the model using our proposed Nested-Learning-inspired frequency updates (1_4_16).
+* `eval.py` / `inference_evaluatin.ipynb` - Scripts and notebooks for evaluating FID scores and accuracy.
+* `predict.py` - Inference script to generate new samples.
+* `run_diffusion_modules.ipynb` - Interactive notebook for running the diffusion modules.
 
 ## 🚀 How to Run
 1. **Clone the repository:**
