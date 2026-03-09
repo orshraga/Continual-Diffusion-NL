@@ -79,6 +79,11 @@ Look for the `update_frequency` parameter or the optimizer step conditions in th
 
 <br>
 
+**📄 Full Project Report**
+For a deep dive into our methodology, architectural choices, and extended results, please read our [Full Project Report](Final_Report_Nested_Learning.pdf).
+
+<br>
+
 **📚 Relevant Papers & Acknowledgments**
 1. Behrouz, A., et al. (2025). *Nested Learning: The Illusion of Deep Learning Architectures*. Google Research.
 2. Ho, J., et al. (2020). *Denoising Diffusion Probabilistic Models*. NeurIPS 2020.
