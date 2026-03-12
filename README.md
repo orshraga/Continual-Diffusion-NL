@@ -84,6 +84,8 @@ For a deep dive into our methodology, architectural choices, and extended result
 
 <br>
 
+![Model Architecture](Untitled Diagram.pdf)
+
 **📚 Relevant Papers & Acknowledgments**
 1. Behrouz, A., et al. (2025). *Nested Learning: The Illusion of Deep Learning Architectures*. Google Research.
 2. Ho, J., et al. (2020). *Denoising Diffusion Probabilistic Models*. NeurIPS 2020.
